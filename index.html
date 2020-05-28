@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minh Nguyen's Portfolio Webpage</title>
+    <!-- normalize CSS across web browsers -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <!-- link to my stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <!-- page navigation bar -->
+      <nav>
+        <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <!-- this div is for layout purposes -->
+        <div class="home-wrapper">
+          <!-- picture of my face -->
+          <img src="images/profile-pic.jpg" alt="picture of me">
+          <div id="home-text">
+            <p>Hello! I'm Minh Nguyen, and I'm an aspiring web developer based out of Columbus, OH. I'm about to embark on the Thinkful Engineering Immersion program to learn all the ins and outs of modern web development.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- basic info about me -->
+      <section id="about">
+        <h2>About</h2>
+        <p>I use the internet every day, both on my laptop and on my Android smartphone, and I've always been fascinated by the technology that we all use every day in our modern world.</p>
+          
+        <p>Learning how things work and putting things together piece by piece and step by step is something that I find rewarding. It's even better to work together as part of a team to build projects collaboratively.</p>
+        
+        <p>Outside of my interests in technology, I'm an avid table tennis player and coach. I've been both playing and coaching at the Columbus Table Tennis Club for many years. I also have a deep and abiding passion for alcohol, from hunting down rare craft beers from around the world, unearthing hidden unknown wine gems, to mixing up high end cocktails, I love all of it!</p>
+      </section>
+
+      <!-- stuff I've done -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <p>Take a look at my most recent project:</p>
+
+        <ul>
+          <li>Project Title: Flask Blog</li>
+          <li>Description: This app functions as a blog where different users can create accounts, log in and out, and add blog posts, which will be displayed in order on the main page.</li>
+          <li>Tech stack: This project was written in Python, using the Flask micro-framework to handle the page routing and user authentication, and the jinja2 templating engine to dynamically generate the HTML and CSS code to display on the web browser. The data is stored on a local database and accessed using standard SQL commands.</li>
+          <li>Screenshots:
+            <br>
+            <img src="images/blog1.jpg" alt="blog screenshot 1">
+            <img src="images/blog2.jpg" alt="blog screenshot 2">
+          </li>
+          <li>Link to project: <a href="https://github.com/nguyen715/blog-project">GitHub</a></li>
+        </ul>
+
+        <p>And here are some pieces of JavaScript that I've written:</p>
+        <ul>
+          <li>
+            <a href="https://repl.it/@MinhNguyen58/Take-Home-School-Shopping">Take Home School Shopping</a>
+            </li>
+          <li>
+            <a href="https://repl.it/@MinhNguyen58/Take-Home-Science-Quiz">Take Home Science Quiz</a>
+          </li>
+          <li>
+            <a href="https://repl.it/@MinhNguyen58/findMyCampsites">Find My Campsites</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- services I offer -->
+      <section id="services">
+        <h2>Services</h2>
+        <p>The services that I can provide for a client include the following:</p>
+        <ol>
+          <li>Writing HTML pages</li>
+          <li>Styling HTML pages using CSS</li>
+          <li>Adding basic interactivity to HTML pages using JavaScript</li>
+        </ol>       
+      </section>
+
+      <!-- how to contact me -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="mail.php" method="post">
+          <label for="user-name">Your name:</label>
+          <input id="user-name" type="text" name="name" required>
+          <label for="user-email">Your email:</label>
+          <input id="user-email" type="text" name="email" required>
+          <label for="user-message">Your message:</label>
+          <textarea id="user-message" name="message"></textarea>
+        </form>
+
+        <p>The best way to contact me is via <a href="mailto:nguyen.715@osu.edu">email</a>.</p>
+        <p>You can also find my github profile <a href="https://github.com/nguyen715">here</a>, and my linkedin profile <a href="https://www.linkedin.com/in/minh-nguyen-85856a1a9">here</a>.</p>
+      </section>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
