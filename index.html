@@ -7,8 +7,9 @@
     <!-- normalize CSS across web browsers -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <!-- link to my stylesheet -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <header>
       <!-- page navigation bar -->
@@ -16,6 +17,7 @@
         <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <main>
       <section id="home">
         <h2>Home</h2>
@@ -24,28 +26,56 @@
           <!-- picture of my face -->
           <img src="images/profile-pic.jpg" alt="picture of me">
           <div id="home-text">
-            <p>Hello! I'm Minh Nguyen, and I'm an aspiring web developer based out of Columbus, OH. I'm about to embark on the Thinkful Engineering Immersion program to learn all the ins and outs of modern web development.</p>
+            <p>Hello! I'm Minh Nguyen, and I'm an aspiring web developer based out of Columbus, OH. I'm currently immersed in the Thinkful Engineering program to learn modern web development methodologies and technologies, including things like responsive design, JavaScript, jQuery, and React.js.</p>
           </div>
         </div>
       </section>
 
       <!-- basic info about me -->
       <section id="about">
-        <h2>About</h2>
-        <p>I use the internet every day, both on my laptop and on my Android smartphone, and I've always been fascinated by the technology that we all use every day in our modern world.</p>
-          
-        <p>Learning how things work and putting things together piece by piece and step by step is something that I find rewarding. It's even better to work together as part of a team to build projects collaboratively.</p>
-        
-        <p>Outside of my interests in technology, I'm an avid table tennis player and coach. I've been both playing and coaching at the Columbus Table Tennis Club for many years. I also have a deep and abiding passion for alcohol, from hunting down rare craft beers from around the world, unearthing hidden unknown wine gems, to mixing up high end cocktails, I love all of it!</p>
+        <h2>About Me</h2>
+          <p>I like to think I'm a pretty normal guy. I love things like watching my Browns play on Sundays (they usually lose), going out for a beer with friends, and binge watching Star Trek on Netflix.</p>
+
+          <p>However, one of the things that sets me apart from many other people is that I'm endlessly curious. I want to know how things work and why they work. I want to know the thinking that went into specific design decisions, whether that is the Browns' offensive system (wide zone with lots of tight ends and running backs but fewer WRs), or my new Mazda6's engine design (only 4 cylinders but extremely high compression ratio), or Facebook's design philosophy when they created their React library (separate code by application components, not by technologies).</p>
+
+          <p>My natural curiosity and love of learning makes software engineering a great fit for my personality. In a nutshell, I would definitely say that one of the most personally satisfying experiences for me is the process of learning relevant technologies (acquiring the tools of the trade), planning out a project, and then systematically building it in an organized and intelligent way that is simultaneously flexible and robust and visually compelling.</p>
+
+          <p>When I'm not working on code, I love things like sitting around a bonfire with good friends, hunting down delicious craft beers from around the world, and playing and coaching table tennis at the Columbus Table Tennis Club.</p>
       </section>
 
       <!-- stuff I've done -->
       <section id="portfolio">
         <h2>Portfolio</h2>
 
-        <p>Take a look at my most recent project:</p>
+        <p>Take a look at some of my recent projects:</p>
 
         <ul>
+          <li>Project Title: Nick and Minh's Marvel Quiz</li>
+          <li>Description: This app is a simple and fun single page web app that I created with my friend Nick Thorpe that tests users' knowledge of trivia in the Marvel Cinematic Universe. It shows how an app which appears to have multiple views/pages can be created on a single page without needing to reload the page, resulting in very fast load times.</li>
+          <li>Tech stack: This project uses a lot of vanilla JavaScript and jQuery to keep track of the user's actions and choices and to handle various event listeners as they proceed through the quiz.</li>
+          <li><span>Screenshots:</span>
+            <img src="./images/quizapp.png">
+          </li>
+          <li>Link to project:
+            <a href="https://thinkful-ei-panda.github.io/quiz-app-minh-nick">Live Site</a>
+            <a href="https://github.com/thinkful-ei-panda/quiz-app-minh-nick">Github</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>Project Title: Bookmarks App</li>
+          <li>Description: This app allows a user to store a list of favorite websites as "bookmarks". It manages information including website title, url, a rating from 1 to 5 stars, and an optional short description. It includes a filter feature that allows the user to filter the results according to star rating, as well as expandable/collapsible bookmark elements. As a solo project, this is a good representation of my design aesthetic, emphasizing clean and minimalist elements, together with a simple color scheme and subtly sophisticated buttons.</li>
+          <li>Tech stack: This project uses a lot of jQuery to manipulate the page view as the user creates and deletes bookmarks. It also interacts with an external API to store bookmark data.</li>
+          <li><span>Screenshots:</span>
+            <img src="./images/bookmarksapp.png">
+          </li>
+          <li>Link to project:
+            <a href="https://thinkful-ei-panda.github.io/minh-bookmarks-app">Live Site</a>
+            <a href="https://github.com/thinkful-ei-panda/minh-bookmarks-app">Github</a>
+          </li>
+        </ul>
+
+        <!-- <ul>
           <li>Project Title: Flask Blog</li>
           <li>Description: This app functions as a blog where different users can create accounts, log in and out, and add blog posts, which will be displayed in order on the main page.</li>
           <li>Tech stack: This project was written in Python, using the Flask micro-framework to handle the page routing and user authentication, and the jinja2 templating engine to dynamically generate the HTML and CSS code to display on the web browser. The data is stored on a local database and accessed using standard SQL commands.</li>
@@ -68,7 +98,7 @@
           <li>
             <a href="https://repl.it/@MinhNguyen58/findMyCampsites">Find My Campsites</a>
           </li>
-        </ul>
+        </ul> -->
       </section>
 
       <!-- services I offer -->

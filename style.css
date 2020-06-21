@@ -7,7 +7,8 @@ body {
 }
 
 p, h2, nav, ul, ol {
-  font-family: Raleway;  
+  font-family: Raleway;
+  font-size: 24px;
 }
 
 /* Increase space between lines of text a little bit */
@@ -22,7 +23,7 @@ a:active  { color: orange;  }
 
 nav {
   text-align: right;
-  font-size: 22px;
+  font-size: 30px;
   margin: 50px;
 }
 
@@ -53,7 +54,16 @@ li {
   margin-right: 20px;
 }
 
+#portfolio ul {
+  margin-bottom: 200px;
+}
+
 #portfolio img {
   width: 600px;
   margin: 20px;
+  border-style: solid;
+}
+
+#portfolio span {
+  display: block;
 }
