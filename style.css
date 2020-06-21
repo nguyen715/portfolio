@@ -1,9 +1,15 @@
-/* Import Raleway font from googlefonts */
+Import Raleway font from googlefonts
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  border-style: solid;
+}
 
 /* Nice beige/pastel background color */
 body {
   background-color: #ffe;
+  border-color: red;
+  /* width: 200%; */
 }
 
 p, h2, nav, ul, ol {
@@ -50,7 +56,7 @@ li {
 }
 
 .home-wrapper img {
-  width: 200px;
+  max-width: 200px;
   margin-right: 20px;
 }
 
