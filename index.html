@@ -24,8 +24,8 @@
         <!-- this div is for layout purposes -->
         <div class="home-wrapper">
           <!-- picture of my face -->
-          <img src="images/profile-pic.jpg" alt="picture of me">
-          <div id="home-text">
+          <img src="images/profile-pic.jpg" alt="picture of me" class="flex-item">
+          <div id="home-text" class="flex-item">
             <p>Hello! I'm Minh Nguyen, and I'm an aspiring web developer based out of Columbus, OH. I'm currently immersed in the Thinkful Engineering program to learn modern web development methodologies and technologies, including things like responsive design, JavaScript, jQuery, and React.js.</p>
           </div>
         </div>
@@ -115,13 +115,14 @@
       <!-- how to contact me -->
       <section id="contact">
         <h2>Contact</h2>
-        <form action="mail.php" method="post">
-          <label for="user-name">Your name:</label>
-          <input id="user-name" type="text" name="name" required>
-          <label for="user-email">Your email:</label>
-          <input id="user-email" type="text" name="email" required>
-          <label for="user-message">Your message:</label>
-          <textarea id="user-message" name="message"></textarea>
+        <form action="https://formspree.io/nguyen.715@osu.edu" method="post">
+          <label for="user-name">Your name:<input id="user-name" type="text" name="name" required></label>
+          
+          <label for="user-email">Your email:<input id="user-email" type="text" name="email" required></label>
+          
+          <label for="user-message">Your message:<textarea id="user-message" name="message"></textarea></label>
+          
+          <button type="submit">Submit</button>
         </form>
 
         <p>The best way to contact me is via <a href="mailto:nguyen.715@osu.edu">email</a>.</p>

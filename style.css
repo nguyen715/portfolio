@@ -1,20 +1,19 @@
-Import Raleway font from googlefonts
+/* Import Raleway font from googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-* {
-  border-style: solid;
-}
 
 /* Nice beige/pastel background color */
 body {
   background-color: #ffe;
-  border-color: red;
   /* width: 200%; */
 }
 
-p, h2, nav, ul, ol {
+h2 {
+  font-size: 30px;
+}
+
+p, nav, ul, ol {
   font-family: Raleway;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /* Increase space between lines of text a little bit */
@@ -29,7 +28,6 @@ a:active  { color: orange;  }
 
 nav {
   text-align: right;
-  font-size: 30px;
   margin: 50px;
 }
 
@@ -46,30 +44,66 @@ section {
   border-bottom: 1px dashed #000;
 }
 
+main {
+  padding: 50px;
+}
+
 li {
   margin: 20px 0px;
 }
 
 /* Arrange image and text side by side in home section */
-.home-wrapper {
+/* .home-wrapper {
   display: flex;
-}
+} */
 
-.home-wrapper img {
+/* .home-wrapper img {
   max-width: 200px;
   margin-right: 20px;
+} */
+
+/* .home-wrapper img {
+  max-width: 100%;
+  margin-right: 20px;
+} */
+
+.home-wrapper img {
+  display: block;
+  margin: auto;
+  max-height: 300px;
 }
 
 #portfolio ul {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
-#portfolio img {
+/* #portfolio img {
   width: 600px;
   margin: 20px;
   border-style: solid;
+} */
+
+#portfolio img {
+  max-width: 80%;
+  margin: 20px;
+  border-style: solid;
+  display: inline-block;
 }
 
 #portfolio span {
   display: block;
+}
+
+#contact form label {
+  display: block;
+}
+
+@media all and (min-width: 600px) {
+  p {
+    font-size: 24px;
+  }
+
+  nav {
+    font-size: 30px;
+  }
 }
