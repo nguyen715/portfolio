@@ -44,10 +44,6 @@ section {
   border-bottom: 1px dashed #000;
 }
 
-main {
-  padding: 50px;
-}
-
 li {
   margin: 20px 0px;
 }
@@ -98,12 +94,17 @@ li {
   display: block;
 }
 
-@media all and (min-width: 600px) {
-  p {
-    font-size: 24px;
+@media all and (min-width: 600px) {  
+
+  main {
+    padding: 50px;
   }
 
-  nav {
-    font-size: 30px;
-  }
+    p {
+      font-size: 24px;
+    }
+
+    nav {
+      font-size: 30px;
+    }
 }
