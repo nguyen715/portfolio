@@ -1,4 +1,4 @@
-/* Import Raleway font from googlefonts */
+  /* Import Raleway font from googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* Nice beige/pastel background color */
@@ -83,12 +83,12 @@ li {
   max-width: 80%;
   margin: 20px;
   border-style: solid;
-  display: inline-block;
 }
 
 #portfolio span {
   display: block;
 }
+
 
 #contact form label {
   display: block;
@@ -100,11 +100,19 @@ li {
     padding: 50px;
   }
 
-    p {
-      font-size: 24px;
-    }
+  p {
+    font-size: 24px;
+  }
 
-    nav {
-      font-size: 30px;
-    }
+  nav {
+    font-size: 30px;
+  }
+  
+  #portfolio .screenshot-container {
+    display: flex;
+  }
+  
+  #portfolio .screenshot-container .flex-item {
+    flex: 1;
+  }
 }
